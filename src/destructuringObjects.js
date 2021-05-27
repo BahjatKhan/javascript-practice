@@ -20,7 +20,22 @@ const restaurant = {
         close: 24,
       },
     },
+    orderDelivery: function({time,address,categories,starterMenu,mainMenu}){
+            console.log(`Order recieved ! Delivery time : ${time} address :${address}
+            Order Menu :For starter ${this.starterMenu[starterMenu]} and for main
+            ${this.mainMenu[mainMenu]}. Categories :${this.categories[categories]}`);
+    },
   };
+
+
+  restaurant.orderDelivery({
+      time:'20:00',
+      address:'Queens,NewYork',
+      starterMenu:'2',
+      mainMenu:'2',
+      categories:'1'
+  });
+
 
 const {name ,categories,openingHours}= restaurant;
 console.log(name,categories,openingHours);
@@ -36,3 +51,12 @@ const obj={a:2,b:3};
 
 ({a,b}=obj);
 console.log(a,b);
+
+//Nested Objects
+const {fri:
+{   open:o=20,
+    close:c=3,
+    break:br='temp close'
+}}=hours;
+
+console.log(o,c,br);
