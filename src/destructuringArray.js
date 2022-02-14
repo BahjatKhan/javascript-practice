@@ -39,5 +39,3 @@
 
 // const [p=1,q=3,r=5] = [];
 // console.log(p,q,r);
-
-
